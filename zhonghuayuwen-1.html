@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	语料库在线--语料库检索
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+        function urlopen(url) {
+            //document.getElementById("urliframe").src = url;
+            if (document.getElementById(url).style.display == "")
+                document.getElementById(url).style.display = "none";
+            else
+                document.getElementById(url).style.display = "";
+        }
+        function urlclose() {
+            document.getElementById("urldiv").style.display = "none";
+        }
+        function urlopen2(url) {
+            document.getElementById("urldiv2").style.display = "";
+        }
+        function urlclose2() {
+            document.getElementById("urldiv2").style.display = "none";
+        }
+        function urlopen3(url) {
+            document.getElementById("urldiv3").style.display = "";
+        }
+        function urlclose3() {
+            document.getElementById("urldiv3").style.display = "none";
+        }
+    </script>
+</head>
+<body style="text-align:center;  margin: 20px auto 10px auto; padding:0; background-image:url(images/bgblue.png);    background-repeat: repeat-x;   background-color: #FFF;" >
+     <form method="post" action="cncindex.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTQzNTczMjk0OGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgoFC1JCaW5kZXh3b3JkBQpSQmxpa2Vtb2RlBQpSQmxpa2Vtb2RlBQ5SQmZ1bGx0ZXh0bW9kZQUOUkJmdWxsdGV4dG1vZGUFDFJhZGlvQnV0dG9uMwUMUmFkaW9CdXR0b240BQxSYWRpb0J1dHRvbjQFDkNoZWNrQm94Q2h1Y2h1BRBDaGVja0JveEtXSUNtb2RliXMUgmdY+pySZotCIj8F0JS3PFzBmKGs9H+YCzdZF2Y=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3A0BE18D" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDgKk5vuzCgLYiuv/CwLzuO7zDQL3uO7zDQLV+YmkCgLZ+YmkCgKM54rGBgK8u9naBwKJlM7DBwKAg8rcDgKWzvT1CAKWzuCuBwK2q5qHDgK/xfDTARYHJhVKxYBZXPemmOCC2HnYCjQGuded4R0NuAi/8QLO" />
+</div>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1">
+<title>语料库在线</title>
+<meta name="Description" content="语料库在线(www.cncorpus.org): 现代汉语语料库检索/古代汉语语料库检索/语言文字研究资源下载" />
+<meta name="keywords" content="国家语委语料库 检索 查询 字频 词频 自动分词 拼音标注 字频统计 词频统计 现代汉语 古代汉语 信息处理 语言资源"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="SHORTCUT ICON" href="favicon.ico"/>
+<link rel="stylesheet" href="common.css" type="text/css"/> 
+</head>
+<body style="background-position: center top; text-align:center;  margin: 20px auto 0px auto; padding:0; background-color: #FFF;" >
+    <div id="header" style="width:1200px; height :80px;border: 1px solid #496077; background-image:url(images/b12.png);background-repeat: repeat;   background-color:#006699; margin:0 auto; text-align:left; position:relative;font-size:10pt; left: 0px; top: 0px;">
+        <div id="left" style ="float :left;width:24%; text-align :center ;">
+<!--        <a href="Index.aspx" style="text-decoration:none"><img src="images/corpus.png" width="210" height="80px" alt="" /></a>-->
+            <img src="images/corpus.png" width="210" height="80px" alt="" />
+        </div>       
+    </div>
+   <div id="navcontainer" style="width:1200px;height: 27px;  margin:0 auto;background-color:#4682b4; background-image:url(images/html_bg.png);   text-align:left; position:relative; border-left: silver 1px solid;  border-right: darkblue 1px solid; border-bottom:midnightblue 1px solid; left: 0px; vertical-align: middle; top: 0px; border-top: whitesmoke 1px solid;">
+		<ul>
+		<li style="padding-left: 20px; width :80px; "><a href="index.aspx" ><img src="images/home.png" style=" border :0;width: 12px; height: 12px" alt="X"/>&nbsp;首页</a></li>
+		<li style="padding-left: 20px; width:120px; "><a href="#"  ><img src="images/p1.png" style=" border :0;width: 12px; height: 12px" alt="X"/>&nbsp;语料库检索</a>
+		    <ul>
+		    <li ><a href="cncindex.aspx">现代汉语语料库检索</a></li>
+		    <li ><a href="acindex.aspx">古代汉语语料库检索</a></li>
+		    </ul>
+		</li>
+         <li style="padding-left: 20px; width:120px; z-index:100"><a href="#"  ><img src="images/p1.png" style=" border :0;width: 12px; height: 12px" alt="X"/>&nbsp;语料分析处理</a>
+		    <ul>
+		    <li style="z-index:100"><a href="CpsWParser.aspx">分词和词性标注</a></li>
+		    <li style="z-index:100"><a href="CpsPinyinTagger.aspx">汉语拼音自动标注</a></li>
+		    <li style="z-index:100"><a href="CpsTongji.aspx">字词频率统计</a></li>
+		    </ul>
+		</li>
+		<li style="padding-left: 30px; width:120px;  "><a href="wdindex.aspx" ><img src="images/cr.png" style=" border :0;width: 12px; height: 12px" alt="X"/>&nbsp;语料字词检索</a></li>
+<!--		<li style="padding-left: 30px; width:120px;  "><a href="resources.aspx" ><img src="images/cr.png" style=" border :0;width: 12px; height: 12px" alt="X"/>&nbsp;研究资源</a></li>-->
+<!--		<li style="padding-left: 400px; width:80px; "><a href="messageboard.aspx" style="width: 72px" ><img src="images/bbs.png" style=" border :0;width: 12px; height: 12px" alt="X"/>&nbsp;留言板</a></li>-->
+		</ul>                   
+   </div>   
+   <div style ="clear:both; position :absolute; "></div>
+</body>
+</html>
+   
+ <div  id="maindiv" style="text-align:left;  width:1200px;min-height:580px; background-color:White; margin:0 auto; font-size:10pt; border-left: 1px solid silver;border-top: silver 0px solid;  border-right: 1px solid silver;left: 0px; top: 0px;">
+ 
+      <div id="DivHead" style="margin-left:0px; text-align:left; width:100%; background-image:url(images/clouds.gif); background-repeat:repeat;">
+                     
+            <br/><br/>
+          <span style="font-size:18pt; font-weight:bold; margin-left:40px;" > <img src="images/dot2.png" alt="X" width="21" height ="20"/><strong>&nbsp;现代汉语语料库检索</strong></span> 
+            &nbsp;&nbsp;<a onclick="urlopen2('#')" class="Abutton" style="margin-left:630px; cursor:pointer; text-decoration:none; display:inline-block; color:#565555;border:1px solid silver; padding:3px;">查询条件格式</a>
+            &nbsp;&nbsp;<a onclick="urlopen3('#')" class="Abutton" style="margin-left:10px; cursor:pointer; text-decoration:none; display:inline-block; color:#565555;  border:1px solid silver; padding:3px;">词类标记代码</a>
+          <br/><br/>
+   </div>
+   <div id="searchpanel" style=" font-size:10pt; font-family: 'Microsoft YaHei' ; border-right: #95dcef 1px solid; border-top: #4682b4 1px solid; border-left: #FFF 1px solid; border-bottom: #4682b4 1px solid;background-color:#C2E0F1; padding-top: 10px; padding-left:45px; padding-bottom: 10px; margin-top:0px;">
+            <span id="Label1" style="display:inline-block;width:72px;padding-top:-7px;">查询条件：</span>
+            <input name="TextBoxCCkeywords" type="text" id="TextBoxCCkeywords" style="width:740px;" />
+            &nbsp; &nbsp;
+            <span id="Label6">每页句数:</span>&nbsp;
+          <select name="DropDownListPsize" id="DropDownListPsize" tabindex="2" style="font-size:10pt;width:50px;">
+	<option value="10">10</option>
+	<option value="50">50</option>
+	<option selected="selected" value="100">100</option>
+	<option value="500">500</option>
+
+</select>
+             
+            <input type="submit" name="Button1" value="检  索" id="Button1" tabindex="1" class="Abutton" style="height:25px;width:120px;margin-left:20px;" />
+          <br />
+ 	       <span id="Label2" style="display:inline-block;height:16px;margin-left:65px;"></span>
+           <img src ="images\p2.png" alt="X" />
+	       <span id="Label5" style="display:inline-block;height:16px;">模式：</span>
+            <span title="按词检索"><input id="RBindexword" type="radio" name="1" value="RBindexword" checked="checked" /><label for="RBindexword">整词匹配</label></span>
+            <span title="按字符串检索"><input id="RBlikemode" type="radio" name="1" value="RBlikemode" /><label for="RBlikemode">模糊匹配</label></span>
+            <input id="RBfulltextmode" type="radio" name="1" value="RBfulltextmode" /><label for="RBfulltextmode">全文检索</label>
+            &nbsp; &nbsp; 
+            <img src ="images\p2.png" alt="X" /> <span id="Label4" style="display:inline-block;height:16px;">输出：</span>
+           <span title="输出无标注的语句"><input id="RadioButton3" type="radio" name="2" value="RadioButton3" checked="checked" /><label for="RadioButton3">生语料</label></span>
+            <span title="输出带分词和词性标注的语句"><input id="RadioButton4" type="radio" name="2" value="RadioButton4" /><label for="RadioButton4">标注语料</label></span>
+            &nbsp; &nbsp; <img src ="images\p2.png" alt="X" /> <span id="Label3" style="display:inline-block;height:16px;">显示：</span>
+           <input id="CheckBoxChuchu" type="checkbox" name="CheckBoxChuchu" checked="checked" /><label for="CheckBoxChuchu">语料出处</label>
+           <span title="以关键词居中(KWIC)方式显示语句"><input id="CheckBoxKWICmode" type="checkbox" name="CheckBoxKWICmode" /><label for="CheckBoxKWICmode">关键词居中</label></span>
+      </div> 
+ 
+      <!--浮动式DIV 语料出处-->
+     <div id="urldiv" style=" position:fixed; z-index:100; width:1110px; margin-left:0px; background-color:#f7f3d4  ; border:1px solid silver; display:none; text-align:center; padding: 5px  0px 10px 25px ;border-bottom:1px solid silver;border-top:1px solid silver;">
+        <table>
+        <tr><td style=" width:1095px; text-align :right; padding-right :30px;"><a onclick="urlclose()" style="padding:2px; background-color:yellowgreen;display:inline-block; text-align:center; font-size :10pt;cursor:pointer; margin-left:1000px;  border:1px solid silver;">
+            <img src="images/cross.png" alt="X" />&nbsp;&nbsp;关闭</a></td></tr>              
+         <tr><td style=" width:100%" >
+             <iframe id="urliframe" src="#" width="1100px" height="60px" frameborder="0" style="background-color:#f7f3d4; border:none; " scrolling="no"></iframe> 
+             </td></tr>  
+         </table>
+   </div> 
+      <!--浮动式DIV 查询条件-->
+     <div id="urldiv2" style=" position:fixed; z-index:100; width:1198px;  font-size:11pt; margin:0px; background-color:#e5f2f5  ; border:1px solid whitesmoke; display:none; text-align:left; padding: 10px  0px 10px 0px ;border-bottom:1px solid silver;border-top:1px solid silver;">
+          <a onclick="urlclose2()" class="LBT" style="padding:3px; background-color:yellowgreen;display:inline-block; text-align:center; font-size :11pt;cursor:pointer; margin-left:1060px;  border:1px solid silver;">&nbsp;&nbsp;关闭&nbsp;&nbsp;</a>
+         <div style ="margin-left:50px;margin-top:10px;line-height:21px; font-family :'宋体'; "> 
+             <div style="float:left; width:340px;" >
+                 查询模式<hr/>
+                 ○ 整词匹配：<br/>
+                 &nbsp; &nbsp; 使用整词索引进行查询，可带词类，多关键词时忽略顺序，速度快，多关键词查询时任一关键词未被索引则不能返回结果。<br/>
+                 ○ 模糊匹配：<br/>
+                 &nbsp; &nbsp; 模糊匹配最易查全，可带词类，多关键词时考虑前后顺序，速度较慢。支持查询词类串。<br/>
+                 ○ 全文检索：<br/>
+                 &nbsp; &nbsp; 使用全文检索方式进行查询，不可带词类，多关键词时忽略前后顺序，速度快，但不能检索“的、了”等极高频词。<br/>
+             </div>
+              <div style="float:left; width:340px; margin-left:30px;" >
+                 查询条件格式<hr/>
+                查询条件由一个或多个关键词组成：<br/>
+                ○ 单一关键词，如： 语言、语言<br/> 
+                         &nbsp; &nbsp; # 字或词，如：文、语言 <br/>
+                         &nbsp; &nbsp; # 词+词类，如： 语言/n、制定/v<br/>
+                         &nbsp; &nbsp; # 词类标识符为[ / ]，如：语言/n <br/>
+                ○ 多关键词，如： 语言 文字，语言/n 文字/n <br/>
+                ○ 连续词类串，如： /v /u /m /v<br/>
+               </div> 
+               <div style="float:left; width:340px; margin-left:30px;" >
+                多关键词逻辑<hr/>
+                只对[整词匹配]的查询方式有效的标记：<br/>
+                 ○ 空格或 [+] 表示 [与(and)] 关系，如： 语言 文字 或 语言 +文字<br/>
+                 ○ [@] 表示 [或(or)] 关系，如： 语言 @文字 <br/>
+                 ○ [-] 表示 [非(not)] 关系，如： 语言 -文字<br/>
+                 &nbsp; &nbsp; 示例：条件“语言 @文字 研究 -教学”表示检索“包含关键词'语言'或'文字'并且含关键词'研究'但不含关键词'教学'”的例句。<br/>
+                   <br/>
+                全文检索和模糊匹配只支持多个关键词之间的[与(and)] 关系。<br/>
+                  </div> 
+             </div>
+   </div>    
+     
+       <!--浮动式DIV 词类代码-->
+     <div id="urldiv3" style=" position:fixed; z-index:100; width:1198px;  font-size:11pt; margin:0px; background-color:#e5f2f9  ; border:1px solid whitesmoke; display:none; text-align:left; padding: 10px  0px 10px 0px ;border-bottom:1px solid silver;border-top:1px solid silver;">
+          <a onclick="urlclose3()" class="LBT" style="padding:3px; background-color:yellowgreen;display:inline-block; text-align:center; font-size :11pt;cursor:pointer; margin-left:1060px;  border:1px solid silver;"">&nbsp;&nbsp;关闭&nbsp;&nbsp;</a>
+           <hr/>
+       <div style ="margin-left:50px;margin-top:10px;line-height:21px; font-family :'宋体'; "> 
+           <div style="float:left; width:300px;" >
+                    n　　　普通名词<br/>nt　 　时间名词<br/>nd　 　方位名词<br/>nl　 　处所名词<br/>nh　 　人名<br/>nhf　　姓<br/>nhs　　名<br/>ns　 　地名<br/>nn 　　族名<br/>ni 　　机构名<br/>nz 　　其他专名<br/>
+             </div>
+              <div style="float:left; width:300px; margin-left:30px;" >
+                    v　　 动词<br/>vd　　趋向动词<br/>vl　　联系动词<br/>vu　　能愿动词<br/>a　 　形容词<br/>f　 　区别词<br/>m　 　数词　　<br/>q　 　量词<br/>d　 　副词<br/>r　 　代词<br/>p　　 介词<br/>c　 　连词<br/>
+               </div> 
+               <div style="float:left; width:300px; margin-left:30px;" >
+                    u　　 助词<br/>e　 　叹词<br/>o　 　拟声词<br/>i　 　习用语<br/>j　　 缩略语<br/>h　　 前接成分<br/>k　　 后接成分<br/>g　 　语素字<br/>x　 　非语素字<br/>w　 　标点符号<br/>ws　　非汉字字符串<br/>wu　　其他未知的符号
+                 </div> 
+             </div>
+   </div>    
+       
+     
+
+     <!--构造显示查询结果的面板-->
+    
+     <!--构造显示查询结果的面板-->
+    <div id="PanellSResults" style="line-height:25px; margin-left:0px; margin-top:0px; vertical-align:top;">
+	
+
+   
+</div>   
+ <br/>
+     <div style="text-align:center; ">
+     
+  </div>
+
+         <br/>
+
+
+<div style="clear :both "></div>
+</div>
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="javascript">
+	var D=new Date();
+        var thisYear=D.getYear();
+</script>
+</head>
+<body style="text-align:center; margin:0 ; padding:0">   
+     <div style ="clear :both" />
+    <div style =" margin:0 auto;  background-color :#496077; height :2px; width :1200px; border: 1px solid #496077;" />  
+   <div id="Div1" style="width:1200px; font-size: 10pt; margin:0 auto; text-align:center; position:relative;  padding-top: 20px;font-family:'Microsoft YaHei'; ">
+       <span style="color :Gray; text-align: left;">  语料库在线（WWW.CNCORPUS.ORG） &copy　2011~2019</span><br/><br/>
+   </div>
+   </body>
+</html>
+</form>
+
+
+</body>
+</html>
